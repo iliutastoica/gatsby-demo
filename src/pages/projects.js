@@ -1,12 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { projects } from "../../content/projects.js"
+// import { projects } from "../../content/projects.js"
+// console.table(projects);
 
-console.table(projects);
 
 const ProjectsPage = () => (
     <Layout>
@@ -16,6 +16,12 @@ const ProjectsPage = () => (
       <p>Welcome to Projects </p>
 
     </Layout>
-  )
+)
 
-  export default ProjectsPage
+// export const query = graphql`
+//   query ProjectsListQuery {
+//     all
+//   }
+// `
+
+export default ProjectsPage
